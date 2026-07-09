@@ -23,10 +23,6 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=mohammadpakdoust&color=blue&style=flat-square" alt="Profile Views" />
-</p>
-
 ---
 
 ## 📌 Professional Snapshot
