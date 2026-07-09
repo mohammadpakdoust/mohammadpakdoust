@@ -117,3 +117,4 @@
 *   **Agile Development Practices** — LinkedIn Learning (Oct 2023)
 *   **3rd Place Winner** — CGI DataJam Atlantic Canada (2026)
 *   **Participant** — RBC HubHacks (2026)
+
