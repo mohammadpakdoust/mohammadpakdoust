@@ -73,8 +73,9 @@
     .kicker{display:flex;align-items:center;gap:11px;margin:0 0 20px;color:var(--mint);font-size:.75rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
     .kicker::before{content:"";width:28px;height:1px;background:var(--mint)}
     h1,h2,h3{font-family:"Manrope",sans-serif;margin-top:0}
-    h1{font-size:clamp(3.5rem,6.4vw,6.75rem);line-height:.94;letter-spacing:-.07em;margin-bottom:26px;max-width:850px}
+    h1{font-size:clamp(3.45rem,6.1vw,6.55rem);line-height:.96;letter-spacing:-.065em;margin-bottom:26px;max-width:940px}
     h1 em{font-style:normal;color:var(--lime)}
+    .keep-together{white-space:nowrap}
     .lead{font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--muted);max-width:730px;line-height:1.68}
     .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
     .btn{height:48px;padding:0 18px;border-radius:13px;display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;font-size:.87rem;border:1px solid var(--line);transition:.2s ease}
@@ -101,12 +102,13 @@
     .float-card small{display:block;color:#a8bbb6;font-size:.68rem;margin-bottom:5px}
     .float-card strong{font:800 1.5rem "Manrope";letter-spacing:-.04em}
     .float-card span{display:block;color:var(--lime);font-size:.72rem;margin-top:3px}
-    .metrics{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:rgba(255,255,255,.018);margin-bottom:90px}
+    .metrics{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:rgba(255,255,255,.018);margin-bottom:28px}
     .metric{padding:26px 24px;min-height:132px;border-right:1px solid var(--line2)}
     .metric:last-child{border-right:0}
     .metric strong{display:block;font:800 clamp(1.9rem,3vw,2.65rem) "Manrope";letter-spacing:-.055em;margin-bottom:4px}
     .metric span{color:var(--muted);font-size:.78rem}
     .section{padding:82px 0;border-top:1px solid var(--line2)}
+    #work{padding-top:58px}
     .section-head{display:grid;grid-template-columns:.78fr 1.22fr;gap:38px;margin-bottom:34px}
     .section-head .num{color:var(--muted2);font:700 .75rem "Manrope";letter-spacing:.1em}
     .section-head h2{font-size:clamp(2.5rem,4.5vw,4.5rem);line-height:1.03;letter-spacing:-.055em;margin-bottom:16px}
@@ -132,7 +134,8 @@
     .visual{position:relative;min-height:100%;background:#0a1312;overflow:hidden;border-left:1px solid var(--line)}
     .visual-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(to bottom,#000 50%,transparent 100%)}
     .chart-panel{position:absolute;inset:42px;border:1px solid var(--line);border-radius:22px;background:rgba(15,28,27,.86);padding:26px;display:flex;flex-direction:column}
-    .panel-top{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:.72rem}
+    .panel-top{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--muted);font-size:.76rem}
+    .illustrative-badge{display:inline-flex;align-items:center;margin-left:8px;padding:4px 8px;border:1px solid rgba(255,216,155,.30);border-radius:999px;background:rgba(255,216,155,.10);color:var(--warm);font:700 .66rem "Manrope";letter-spacing:.06em;text-transform:uppercase;vertical-align:middle}
     .dots{display:flex;gap:6px}.dots i{width:7px;height:7px;border-radius:50%;background:#31423f}.dots i:first-child{background:var(--lime)}
     .bars{display:flex;align-items:end;gap:9px;height:180px;margin-top:auto;padding-top:30px}
     .bars i{flex:1;border-radius:8px 8px 3px 3px;background:linear-gradient(to top,rgba(99,222,193,.18),rgba(183,243,107,.85));height:var(--h);box-shadow:0 0 20px rgba(183,243,107,.05)}
@@ -181,7 +184,9 @@
     }
     @media(max-width:650px){
       .shell{width:calc(100% - 26px)}.nav-wrap{top:8px;padding-top:8px}.brand-copy span{display:none}
-      .hero{padding-top:48px}.portrait-card,.portrait-card img{min-height:500px;height:500px}.float-card{width:132px}
+      .hero{padding-top:48px}
+      .keep-together{white-space:normal}
+      #work{padding-top:46px}.portrait-card,.portrait-card img{min-height:500px;height:500px}.float-card{width:132px}
       .metrics{grid-template-columns:1fr}.metric{border-right:0!important;border-bottom:1px solid var(--line2)!important}.metric:last-child{border-bottom:0!important}
       .section{padding:64px 0}.section-head{gap:15px}.case-copy{padding:26px}.case-top{margin-bottom:38px}.case-facts{grid-template-columns:1fr}.visual{min-height:390px}.chart-panel{inset:22px}
       .experiments,.skill-wrap,.about-band{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:5px}.contact{padding:88px 0 70px}footer{flex-direction:column}
@@ -210,10 +215,11 @@
     <section class="hero shell">
       <div class="reveal">
         <p class="kicker">Halifax, Nova Scotia</p>
-        <h1>I build data systems that turn complexity into <em>clear decisions.</em></h1>
+        <h1>I build data systems that turn complexity into <em class="keep-together">clear decisions.</em></h1>
         <p class="lead">M.Sc. Computing & Data Analytics candidate and AI & Data Analytics Intern at Nova Scotia Health. I work across data engineering, analytics, forecasting, business intelligence, and practical AI—with a strong bias toward reliability and explainability.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#work">Explore case studies <span>↘</span></a>
+          <a class="btn secondary" href="#" id="resumeDownload">Download résumé <span>↓</span></a>
           <a class="btn secondary" href="mailto:mohpakdoust@gmail.com">mohpakdoust@gmail.com</a>
         </div>
         <div class="quick-links">
@@ -233,7 +239,7 @@
       </div>
     </section>
 
-    <section class="shell metrics reveal" aria-label="Highlights">
+    <section class="shell metrics" aria-label="Highlights">
       <div class="metric"><strong>4+</strong><span>years in technical software delivery & validation</span></div>
       <div class="metric"><strong>3rd</strong><span>place out of 30 teams · CGI DataJam Atlantic Canada</span></div>
       <div class="metric"><strong>4.08</strong><span>/ 4.30 GPA · M.Sc. Computing & Data Analytics</span></div>
@@ -261,7 +267,7 @@
           <div class="visual">
             <div class="visual-grid"></div>
             <div class="chart-panel">
-              <div class="panel-top"><span>Workforce signal · illustrative</span><span class="dots"><i></i><i></i><i></i></span></div>
+              <div class="panel-top"><span>Workforce signal <strong class="illustrative-badge">Illustrative</strong></span><span class="dots"><i></i><i></i><i></i></span></div>
               <div class="bars">
                 <i style="--h:38%"></i><i style="--h:49%"></i><i style="--h:45%"></i><i style="--h:61%"></i><i style="--h:55%"></i><i style="--h:72%"></i><i style="--h:67%"></i><i style="--h:83%"></i><i style="--h:76%"></i><i style="--h:91%"></i>
               </div>
@@ -397,6 +403,32 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("resumeDownload")?.addEventListener("click", async (event) => {
+      event.preventDefault();
+      const button = event.currentTarget;
+      const original = button.innerHTML;
+      try {
+        button.textContent = "Preparing résumé…";
+        const response = await fetch("https://raw.githubusercontent.com/mohammadpakdoust/mohammadpakdoust/portfolio-v2/portfolio/resume.b64", {cache:"no-store"});
+        if (!response.ok) throw new Error("Resume download source unavailable");
+        const encoded = (await response.text()).replace(/\s+/g, "");
+        const binary = atob(encoded);
+        const bytes = new Uint8Array(binary.length);
+        for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+        const blobUrl = URL.createObjectURL(new Blob([bytes], {type:"application/pdf"}));
+        const link = document.createElement("a");
+        link.href = blobUrl;
+        link.download = "Mohammad_Pakdoust_Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+      } catch (error) {
+        window.open("https://github.com/mohammadpakdoust/mohammadpakdoust/blob/portfolio-v2/portfolio/resume.b64", "_blank", "noopener");
+      } finally {
+        button.innerHTML = original;
+      }
+    });
     const observer = new IntersectionObserver((entries)=>{
       entries.forEach((entry)=>{
         if(entry.isIntersecting){ entry.target.classList.add("in"); observer.unobserve(entry.target); }
