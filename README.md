@@ -28,7 +28,7 @@
 ## 📌 Professional Snapshot
 
 *   **QA & Testing Expertise:** 4+ years of professional experience in software testing, defect analysis, and backend verification. Documented **500+ defects** with severity classifications in Jira across release cycles.
-*   **Academic Excellence:** Pursuing a **Master of Science in Computing and Data Analytics** at Saint Mary's University (Halifax, NS), maintaining a top-tier **GPA of 4.08 / 4.3**. Recipient of A+ grades in UI/UX and Quality Engineering.
+*   **Academic Excellence:** Pursuing a **Master of Science in Computing and Data Analytics** at Saint Mary's University (Halifax, NS), maintaining a top-tier **GPA of 4.04 / 4.3**. Recipient of A+ grades in UI/UX and Quality Engineering.
 *   **Hackathon Winner:** Placed **3rd out of 30 teams** at the **CGI DataJam Atlantic Canada 2026** hackathon, building an AI-powered routing system that estimated a reduction of **114 minutes** in hospital patient wait times.
 *   **Advanced AI & Data Systems:** Hands-on developer of document-grounded RAG pipelines (achieving 90%+ retrieval precision over 10,000+ pages), mechanistic interpretability (SAE activations analysis), and multi-agent automations (CrewAI).
 
