@@ -209,7 +209,7 @@
         <p class="lead">I'm an AI & Data Analytics Intern at Nova Scotia Health and an M.Sc. Computing & Data Analytics candidate at Saint Mary's University. My work uses SQL, Python, Power BI, forecasting, automation, and applied AI.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#work">See my work <span>↘</span></a>
-          <a class="btn secondary" href="https://raw.githubusercontent.com/mohammadpakdoust/mohammadpakdoust/portfolio-v2/portfolio/Mohammad_Pakdoust_Resume.pdf" download="Mohammad_Pakdoust_Resume.pdf">Download resume <span>↓</span></a>
+          <a class="btn secondary" id="download-resume" href="#">Download resume <span>↓</span></a>
           <a class="btn secondary" href="mailto:mohpakdoust@gmail.com">mohpakdoust@gmail.com</a>
         </div>
         <div class="quick-links">
@@ -383,6 +383,24 @@
   </footer>
 
   <script>
+    const resumeParts = [
+      /* RESUME_PARTS */
+    ];
+    document.getElementById("download-resume").addEventListener("click", (event) => {
+      event.preventDefault();
+      const binary = atob(resumeParts.join(""));
+      const bytes = new Uint8Array(binary.length);
+      for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+      const url = URL.createObjectURL(new Blob([bytes], {type: "application/pdf"}));
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "Mohammad_Pakdoust_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+
     document.getElementById("year").textContent = new Date().getFullYear();
     const observer = new IntersectionObserver((entries)=>{
       entries.forEach((entry)=>{
